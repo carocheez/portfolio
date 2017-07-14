@@ -27,6 +27,66 @@ li {
 
 </html><title>Carolyn's Blog</title><font face="Courier"<title>Carolyn's Blog</title> <body style="background-color:rgb(255, 225, 225)">  <center><h style="font-size:300%;"> Carolyn Chen </h></center>
 <center><img src="photo.JPG" alt="HTML5 Icon" style="width:325px;height:400px;"></center>
+    
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="photo.JPG" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">that's me!</div>
+  </div>
+</div>
+
+</body>
+</html>
+    
+    
 <p><center> Welcome to my website! My name is Carolyn Chen and I am going to be a junior at Saint Francis this fall. 
     I love music. I play cello and I am in choir. I like reading, although I haven't made enough time to do so recently. 
     I love talking and laughing with my friends. Baking is another hobby that I haven't made enough time for. I also love food!! </center></p>
